@@ -1,0 +1,304 @@
+{
+    "files.watcherExclude": {
+        "**/.bloop": true,
+        "**/.metals": true,
+        "**/.ammonite": true
+    },
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
+    "editor.fontFamily": "Monoid, Menlo, Monaco, 'Courier New', monospace",
+    "workbench.editor.showTabs": false,
+    "editor.minimap.enabled": false,
+    "editor.tabSize": 2,
+    "vim.easymotion": true,
+    "vim.leader": "<space>",
+    "editor.lineNumbers": "relative",
+    "vim.visualModeKeyBindings": [
+        {
+            "before": [
+                ">"
+            ],
+            "commands": [
+                "editor.action.indentLines"
+            ]
+        },
+        {
+            "before": [
+                "<"
+            ],
+            "commands": [
+                "editor.action.outdentLines"
+            ]
+        },
+        // Navigation
+        {
+            "before": ["ä"],
+            "after": ["{"] // Paragraph up
+        },
+        {
+            "before": ["ö"],
+            "after": ["}"] // Paragraph down
+        }
+    ],
+    "vim.normalModeKeyBindings": [
+        // Navigation
+        {
+            "before": ["leader", "r", "d"],
+            "commands": [
+                "editor.action.revealDefinition"
+            ]
+        },
+        {
+            "before": ["ä"],
+            "after": ["{"] // Paragraph up
+        },
+        {
+            "before": ["ö"],
+            "after": ["}"] // Paragraph down
+        },
+        {
+            "before": ["leader", "g", "d"],
+            "commands": [
+                "editor.action.revealDefinition"
+            ]
+        },
+        {
+            "before": ["leader", "g", "b"],
+            "commands": [
+                "workbench.action.navigateBack"
+            ]
+        },
+        // Files
+        {
+            "before": ["leader", "f", "f"],
+            "commands": [
+                "workbench.action.quickOpen"
+            ]
+        },
+        {
+            "before": ["leader", "f", "n"],
+            "commands": [
+                "fileutils.newFile"
+            ]
+        },
+        {
+            "before": ["leader", "f", "i"],
+            "commands": [
+                "workbench.action.openSettingsJson" 
+            ]
+        },
+        {
+            "before": ["leader", "t", "e"],
+            "commands": [
+                "workbench.view.explorer" 
+            ]
+        },
+        // Toggle
+        {
+            "before": ["leader", "t", "t"],
+            "commands": [
+                "workbench.action.toggleSidebarVisibility"
+            ]
+        },
+        // Windows & Editors
+        {
+            "before": ["leader", "w", "v"],
+            "commands": [
+                "workbench.action.splitEditor"
+            ]
+        },
+        {
+            "before": ["leader", "w", "w"],
+            "commands": [
+                "workbench.action.navigateEditorGroups"
+            ]
+        },
+        {
+            "before": ["leader", "w", "h"],
+            "commands": [
+                "workbench.action.focusPreviousGroup"
+            ]
+        },
+        {
+            "before": ["leader", "w", "l"],
+            "commands": [
+                "workbench.action.focusNextGroup"
+            ]
+        },
+        {
+            "before": ["leader", "w", "q"],
+            "commands": [
+                "workbench.action.closeActiveEditor"
+            ]
+        },
+        {
+            "before": ["leader", "b", "k"],
+            "commands": [
+                "workbench.action.closeEditorsInGroup"
+            ]
+        },
+        {
+            "before": ["leader", "b", "l"],
+            "commands": [
+                "workbench.action.nextEditorInGroup"
+            ]
+        },
+        {
+            "before": ["leader", "b", "h"],
+            "commands": [
+                "workbench.action.previousEditorInGroup"
+            ]
+        },
+        // Magit
+        {
+            "before": ["leader", "g", "g"],
+            "commands": [
+                "magit.status"
+            ]
+        },
+        // Terminal
+        {
+            "before": ["leader", "o", "t"],
+            "commands": [
+                "workbench.action.terminal.new"
+            ]
+        },
+        // Search
+        {
+            "before": ["leader", "s", "p"],
+            "commands": [
+                "workbench.action.findInFiles"
+            ]
+        },
+        // Project
+        {
+            "before": ["leader", "p", "p"],
+            "commands": [
+                "projectManager.listProjects"
+            ]
+        },
+        {
+            "before": ["leader", "p", "n"],
+            "commands": [
+                "projectManager.listProjectsNewWindow"
+            ]
+        },
+        {
+            "before": ["leader", "p", "s"],
+            "commands": [
+                "projectManager.saveProject"
+            ]
+        },
+        {
+            "before": ["leader", "p", "e"],
+            "commands": [
+                "projectManager.editProjects"
+            ]
+        },
+        {
+            "before": ["leader", "p", "D",],
+            "commands": [
+                "projectManager.refreshAnyProjects"
+            ]
+        },
+        // Formatting
+        {
+            "before": ["leader", "m", "f", "a"],
+            "commands": [
+                "editor.action.formatDocument"
+            ]
+        },
+        {
+            "before": ["leader", "m", "f", "r"],
+            "commands": [
+                "editor.action.formatSelection"
+            ]
+        },
+        // Debugging
+        {
+            "before": ["leader", "d", "r", "a"],
+            "commands": [
+                "workbench.debug.viewlet.action.removeAllBreakpoints"
+            ]
+        },
+        {
+            "before": ["leader", "d", "r", "r"],
+            "commands": [
+                "debug.removeBreakpoint"
+            ]
+        },
+        {
+            "before": ["leader", "d", "b",],
+            "commands": [
+                "editor.debug.action.toggleBreakpoint"
+            ]
+        },
+        // dired
+        {
+            "before": ["leader", "."],
+            "commands": [
+                "extension.dired.open"
+            ]
+        },
+        // Misc.
+        {
+            "before": ["leader", "f", "p"],
+            "commands": [
+                "workbench.action.opensettingsjson"
+            ]
+        },
+        {
+            "before": ["leader", "n", "e"],
+            "commands": [
+                "editor.action.marker.nextInFiles" // Shows next problem
+            ]
+        },
+        {
+            "before": ["leader", ":"],
+            "commands": [
+                "workbench.action.showCommands" // Shift + CMD + P
+            ]
+        },
+        {
+            "before": ["leader", "u", "i"],
+            "commands": [
+               "editor.action.showHover"
+            ]
+        }
+    ],
+    "vim.overrideCopy": true,
+    "vim.surround": true,
+    "vim.sneak": true,
+    "vim.sneakUseIgnorecaseAndSmartcase": true,
+    "vim.useCtrlKeys": false,
+    "workbench.fontAliasing": "antialiased",
+    // "editor.suggestFontSize": 3,
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.lineHeight": 1.6,
+    "projectManager.git.baseFolders": [
+        "/Users/miikamoilanen/dev"
+    ],
+    "projectManager.git.maxDepthRecursion": 2,
+    "redhat.telemetry.enabled": false,
+    "keyboard.dispatch": "keyCode",
+    "window.menuBarVisibility": "compact",
+    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\wsl.exe",
+    "editor.codeLens": true,
+    "C_Cpp.updateChannel": "Insiders",
+    "python.terminal.launchArgs": [
+        "-m",
+        "IPython",
+        "--no-autoindent",
+    ],
+    "python.formatting.provider": "black",
+    "workbench.colorTheme": "Bearded Theme Altica",
+    "[python]": {
+
+        "editor.wordBasedSuggestions": false
+    },
+    "workbench.editor.untitled.hint": "hidden",
+    "python.defaultInterpreterPath": "/Users/miikamoilanen/miniconda3/bin/python",
+    "editor.formatOnSave": true,
+    "terminal.integrated.defaultProfile.osx": "zsh"
+}
